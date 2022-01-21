@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d15ad3a64f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Today's To Do</title>
+  </head>
   <body>
+    <section class="main">
+      <header class="header">
+        <h1>Today's To Do</h1>
+      </header>
+
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Add to your list..."
+          id="inputfield"
+          class="todoInput"
+        />
+        <ul class="list"></ul>
+        <input type="submit" value="Clear all completed" class="todoSubmit" />
+      </div>
+    </section>
+    <script src="/src/index.js"></script>
   </body>
 </html>
