@@ -1,19 +1,29 @@
-import _ from 'lodash';
-import printMe from './print.js';
+const todoListContianer = document.querySelector('.list');
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const todoList = [
+  {
+    description: 'coding',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'reading',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'watching movie',
+    completed: false,
+    index: 3,
+  },
+];
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-document.body.appendChild(component());
+todoList.forEach((list) => {
+  todoListContianer.innerHTML += `<li>
+  <div>
+  <input type="checkbox">
+  <p>${list.description}</p>
+  </div>
+  </li>
+  `;
+});

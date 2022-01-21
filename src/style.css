@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 650px;
+  margin: 150px auto 0 auto;
+}
+
+.main,
+.header,
+.container,
+.list li div {
+  display: flex;
+}
+
+.main,
+.container {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header,
+.list li div {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todoInput,
+.todoSubmit {
+  width: 100%;
+  font-size: 24px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #5f5656e3;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todoSubmit {
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.list li div {
+  gap: 50px;
+}
