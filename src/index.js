@@ -21,6 +21,15 @@ const renderTodos = () => {
       `;
   });
 
+  document.querySelectorAll('.check').forEach((box) => {
+    box.addEventListener('change', () => {
+      const task = todos.list[+box.parentNode.parentNode.id - 1];
+      task.completed = box.checked;
+      todos.update(task);
+      renderTodos();
+    });
+  });
+
   document.querySelectorAll('.input').forEach((inp) => {
     inp.addEventListener('change', () => {
       const task = todos.list[+inp.parentNode.parentNode.id - 1];
@@ -59,4 +68,10 @@ form.addEventListener('submit', (e) => {
   });
   renderTodos();
   form.reset();
+});
+
+const clearBtn = document.querySelector('.clearAll');
+clearBtn.addEventListener('click', () => {
+  todos.clearCompleted();
+  renderTodos();
 });
