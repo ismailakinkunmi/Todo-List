@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+
     <title>Today's To Do</title>
   </head>
   <body>
@@ -20,18 +20,22 @@
       <header class="header">
         <h1>Today's To Do</h1>
       </header>
-
-      <div class="container">
+      <form>
         <input
           type="text"
           placeholder="Add to your list..."
           id="inputfield"
           class="todoInput"
+          required
         />
+
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="container">
         <ul class="list"></ul>
-        <input type="submit" value="Clear all completed" class="todoSubmit" />
+        <button class="clearAll">Clear all completed</button>
       </div>
     </section>
-    <script src="/src/index.js"></script>
   </body>
 </html>
