@@ -1,7 +1,15 @@
 import './style.css';
 import Todos from './todos.js';
 
+
 const todos = new Todos();
+
+const todoList = [
+  { description: 'meeting', completed: true, index: 1 },
+  { description: 'coding', completed: false, index: 2 },
+  { description: 'watching movie', completed: false, index: 3 },
+];
+
 
 const list = document.querySelector('.list');
 const renderTodos = () => {
