@@ -67,3 +67,7 @@ form {
 .hide {
   display: none;
 }
+
+.active {
+  background: #ff0;
+}
