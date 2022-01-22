@@ -16,23 +16,10 @@ body {
   margin: 150px auto 0 auto;
 }
 
-.main,
-.header,
-.container,
-.list li div {
+form {
   display: flex;
-}
-
-.main,
-.container {
-  flex-direction: column;
-  gap: 24px;
-}
-
-.header,
-.list li div {
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .todoInput,
@@ -47,8 +34,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.todoSubmit {
-  cursor: pointer;
+.clearAll {
+  background: #d3d1d1e3;
+  padding: 12px 20px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
 }
 
 .list {
@@ -57,6 +48,22 @@ body {
   list-style: none;
 }
 
-.list li div {
-  gap: 50px;
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.hide {
+  display: none;
 }
