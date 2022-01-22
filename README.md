@@ -1,6 +1,6 @@
 # Today's To Do
 
-## This is a simple daily todo structure
+## This is a simple daily To Do list application
 
 ## Getting Started
 
