@@ -3,7 +3,7 @@ import './style.css';
 const todoList = [
   { description: 'meeting', completed: true, index: 1 },
   { description: 'coding', completed: false, index: 2 },
-  { description: 'watching movie', completed: true, index: 3 },
+  { description: 'watching movie', completed: false, index: 3 },
 ];
 
 const list = document.querySelector('.list');
