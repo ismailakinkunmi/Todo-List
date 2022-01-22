@@ -44,5 +44,3 @@ Hat tip 👒 to microverse for the opportunity and my coding partners.
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-# Webpack bundle
