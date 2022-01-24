@@ -24,8 +24,7 @@
 
 ## Live Project
 
-This site was built using [GitHub Pages](https://ismailakinkunmi.github.io/Todo-List/
-/dist/)
+This site was built using [GitHub Pages](https://ismailakinkunmi.github.io/Todo-List/dist/)
 
 ## Author
 
