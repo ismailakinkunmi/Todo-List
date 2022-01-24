@@ -29,4 +29,12 @@ export default class Todos {
     this.list[task.index - 1] = task;
     localStorage.setItem('tasks', JSON.stringify(this.list));
   }
+
+  clearCompleted() {
+    this.list = this.list
+      .filter((task) => !task.completed)
+      .map((task, i) => ({ ...task, index: i + 1 }));
+
+    localStorage.setItem('tasks', JSON.stringify(this.list));
+  }
 }
